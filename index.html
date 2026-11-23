@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eagre - stream clipper for Windows</title>
+<meta name="description" content="Eagre turns long streams and VODs into vertical Shorts, TikToks and Reels. It finds the moments where the stream and the chat go off, frames the facecam, adds captions and posts for you. Runs on your own PC.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 18'%3E%3Cpath d='M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7' fill='none' stroke='%23ff2e3f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><svg viewBox="0 0 34 18" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00e5ff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient></defs><path d="M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/></svg><span>Eag<b>re</b></span></a>
+  <nav class="links"><a class="hide-sm" href="#features">Features</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+  <p class="kicker">Stream clipper // Windows // Early access soon</p>
+  <h1>Catch the moment <span class="hot">chat goes off.</span></h1>
+  <p class="lead">Eagre turns a long stream or VOD into vertical clips for YouTube Shorts, TikTok and Instagram Reels. It listens to the stream and reads the chat, ranks the best moments, frames the facecam, adds captions, and posts the ones you pick.</p>
+  <a class="btn" href="mailto:hello@eagre.app?subject=Eagre%20early%20access">Get early access</a><a class="btn ghost" href="#features">See what it does</a>
+  <p class="note">Runs on your own PC. Your videos never go to our servers.</p>
+
+  <div class="signal" aria-label="Illustration: the stream's sound drawn as a waveform, with the loudest moments highlighted">
+    <div class="label"><i></i>Signal // every peak is a moment</div>
+    <div class="bars" id="bars"></div>
+    <svg class="chat" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34 L0 26 C20 22 30 12 40 24 S60 30 75 18 S95 8 110 26 S140 30 160 14 S185 6 200 22 S230 30 250 10 S270 4 285 24 S315 30 330 16 S360 12 375 26 L400 22 L400 34 Z" fill="#39ff88" opacity=".35"/></svg>
+    <div class="legend"><span><b style="background:#00e5ff"></b>Sound</span><span><b style="background:#39ff88"></b>Chat activity</span><span><b style="background:#ff4fd8"></b>Moment</span></div>
+  </div>
+</div>
+
+<section id="features"><div class="wrap">
+  <h2><small>What it does</small>From a 3-hour stream to clips worth posting</h2>
+  <div class="grid">
+    <div class="card"><div class="num">01</div><h3>Finds the moments</h3><p>Paste a YouTube or Twitch link, or drop in a file. Eagre scores every moment on the streamer's reaction, the story and how hard the chat explodes, then lists the best first.</p></div>
+    <div class="card"><div class="num">02</div><h3>Frames it for vertical</h3><p>Facecam on top and gameplay below, or a single tracked shot. It switches layout on its own when the streamer leaves the camera.</p></div>
+    <div class="card"><div class="num">03</div><h3>Captions that pop</h3><p>Word-by-word captions in 25 styles with animations, names spelled right, a hook title for the first seconds, and fillers like "um" cut out.</p></div>
+    <div class="card"><div class="num">04</div><h3>Edit by deleting words</h3><p>Change a clip by deleting words from its transcript. Live preview, timeline, undo, music, text boxes and sound effects.</p></div>
+    <div class="card"><div class="num">05</div><h3>Post and schedule</h3><p>Send clips straight to YouTube, with TikTok and Instagram on the way. Plan them on a calendar, or export for Premiere and DaVinci.</p></div>
+    <div class="card"><div class="num">06</div><h3>Yours, on your PC</h3><p>All the heavy lifting runs on your own graphics card. No upload limits, no credits per minute, and your footage stays with you.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2><small>Built for streamers and clippers</small>The numbers</h2>
+  <div class="facts">
+    <div><strong>9:16</strong><span>also 1:1, 4:5 and 16:9</span></div>
+    <div><strong>25</strong><span>caption styles</span></div>
+    <div><strong>0</strong><span>credits per minute</span></div>
+    <div><strong>100%</strong><span>processed on your PC</span></div>
+  </div>
+  <p class="note" style="margin-top:22px">Needs Windows 10 or 11. An NVIDIA graphics card is recommended.</p>
+</div></section>
+
+<section><div class="wrap narrow">
+  <h2><small>Early access</small>Want to try it first?</h2>
+  <p style="color:var(--dim)">Eagre is in testing now. Email us and we'll let you know when early access opens. There will be a free plan, and paid plans for more clips and features.</p>
+  <a class="btn" href="mailto:hello@eagre.app?subject=Eagre%20early%20access">hello@eagre.app</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="delete-data.html">Delete your data</a><a href="mailto:hello@eagre.app">Contact</a></div>
+  <div>&copy; 2026 Eagre</div>
+</div></footer>
+
+<script>
+(function () {
+  var el = document.getElementById('bars'); if (!el) return;
+  var n = window.innerWidth < 600 ? 64 : 120, peaks = [9, 23, 31, 47, 58, 72, 88, 101, 112];
+  for (var i = 0; i < n; i++) {
+    var s = document.createElement('span');
+    var h = 25 + 45 * Math.abs(Math.sin(i * 1.7) * Math.cos(i * .31)) + 20 * Math.abs(Math.sin(i * .53));
+    var isPeak = peaks.indexOf(Math.round(i * 120 / n)) >= 0;
+    if (isPeak) { h = 92 + (i % 3) * 3; s.className = 'peak'; }
+    s.style.height = Math.min(h, 100) + '%';
+    el.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>

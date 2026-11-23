@@ -1,10 +1,12 @@
+@font-face { font-family: "Sora"; font-weight: 600; font-display: swap; src: url("fonts/sora-600.woff2") format("woff2"); }
+@font-face { font-family: "Sora"; font-weight: 700; font-display: swap; src: url("fonts/sora-700.woff2") format("woff2"); }
 :root {
   /* Eagre "Signal red" (23 Nov 2026): black, white text, one red - same as the app's dark theme. No purple. */
   --bg: #0b0b0c; --panel: #121214; --panel-2: #18181b; --edge: #232327; --edge-2: #34343a;
   --text: #f4f2ee; --dim: #9a9aa0; --faint: #6b6b72;
   --red: #ff2e3f; --link: #ff7a86; --bar: #3a3a40;
   --mono: "JetBrains Mono", Consolas, "Courier New", monospace;
-  --head: "Oswald", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+  --head: "Sora", "Segoe UI", system-ui, sans-serif;
   --body: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
 }
 * { box-sizing: border-box; }
@@ -19,9 +21,9 @@ a:hover { color: var(--text); }
 header.top { border-bottom: 1px solid var(--edge); }
 header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text);
-  font: 700 26px/1 var(--head); letter-spacing: .04em; text-transform: uppercase; }
+  font: 700 24px/1 var(--head); letter-spacing: -.02em; }
 .logo svg { width: 34px; height: 18px; }
-.logo b { color: var(--red); font-weight: 700; }
+.logo b { color: inherit; font-weight: 700; }
 nav.links { display: flex; gap: 20px; font: 12px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
 nav.links a { color: var(--dim); text-decoration: none; }
 nav.links a:hover { color: var(--text); }
@@ -29,7 +31,7 @@ nav.links a:hover { color: var(--text); }
 /* hero */
 .hero { padding-top: 72px; padding-bottom: 40px; }
 .kicker { font: 12px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin: 0 0 14px; }
-h1 { font: 700 clamp(38px, 7vw, 72px)/1.02 var(--head); text-transform: uppercase; margin: 0 0 20px; letter-spacing: .01em; }
+h1 { font: 700 clamp(36px, 6.2vw, 64px)/1.08 var(--head); margin: 0 0 20px; letter-spacing: -.035em; }
 h1 .hot { color: var(--red); }
 .lead { font-size: 20px; color: var(--dim); max-width: 640px; margin: 0 0 28px; }
 .btn { display: inline-block; padding: 13px 22px; background: var(--red); color: #fff; text-decoration: none;
@@ -51,16 +53,16 @@ h1 .hot { color: var(--red); }
 
 /* sections */
 section { padding: 56px 0; border-top: 1px solid var(--edge); }
-h2 { font: 700 clamp(26px, 4vw, 38px)/1.1 var(--head); text-transform: uppercase; margin: 0 0 28px; }
+h2 { font: 700 clamp(24px, 3.6vw, 34px)/1.15 var(--head); margin: 0 0 28px; letter-spacing: -.025em; }
 h2 small { display: block; font: 12px var(--mono); color: var(--red); letter-spacing: .16em; margin-bottom: 10px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .card { background: var(--panel); border: 1px solid var(--edge); border-radius: 4px; padding: 22px; }
 .card .num { font: 12px var(--mono); color: var(--red); letter-spacing: .14em; }
-.card h3 { font: 700 21px/1.2 var(--head); text-transform: uppercase; margin: 8px 0 8px; letter-spacing: .02em; }
+.card h3 { font: 600 19px/1.25 var(--head); margin: 8px 0 8px; letter-spacing: -.015em; }
 .card p { margin: 0; color: var(--dim); font-size: 15.5px; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--edge); border: 1px solid var(--edge); }
 .facts div { background: var(--panel); padding: 18px; }
-.facts strong { display: block; font: 700 28px/1.1 var(--head); color: var(--text); }
+.facts strong { display: block; font: 700 26px/1.1 var(--head); letter-spacing: -.02em; color: var(--text); }
 .facts span { font: 11px var(--mono); color: var(--dim); letter-spacing: .12em; text-transform: uppercase; }
 
 /* legal pages */

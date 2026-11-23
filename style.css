@@ -1,7 +1,8 @@
 :root {
-  --bg: #07080a; --panel: #0e1014; --panel-2: #14171d; --edge: #1f242c; --edge-2: #2c323d;
-  --text: #ecebe6; --dim: #9aa1ad; --faint: #6b7280;
-  --red: #ff2e3f; --amber: #ffb000; --green: #39ff88; --cyan: #00e5ff; --violet: #8a5bff; --pink: #ff4fd8;
+  /* Eagre "Signal red" (23 Nov 2026): black, white text, one red - same as the app's dark theme. No purple. */
+  --bg: #0b0b0c; --panel: #121214; --panel-2: #18181b; --edge: #232327; --edge-2: #34343a;
+  --text: #f4f2ee; --dim: #9a9aa0; --faint: #6b6b72;
+  --red: #ff2e3f; --link: #ff7a86; --bar: #3a3a40;
   --mono: "JetBrains Mono", Consolas, "Courier New", monospace;
   --head: "Oswald", "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
   --body: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
@@ -9,7 +10,7 @@
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 var(--body); }
-a { color: var(--cyan); }
+a { color: var(--link); }
 a:hover { color: var(--text); }
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 .narrow { max-width: 760px; }
@@ -27,7 +28,7 @@ nav.links a:hover { color: var(--text); }
 
 /* hero */
 .hero { padding-top: 72px; padding-bottom: 40px; }
-.kicker { font: 12px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin: 0 0 14px; }
+.kicker { font: 12px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin: 0 0 14px; }
 h1 { font: 700 clamp(38px, 7vw, 72px)/1.02 var(--head); text-transform: uppercase; margin: 0 0 20px; letter-spacing: .01em; }
 h1 .hot { color: var(--red); }
 .lead { font-size: 20px; color: var(--dim); max-width: 640px; margin: 0 0 28px; }
@@ -42,8 +43,8 @@ h1 .hot { color: var(--red); }
 .signal .label { font: 11px var(--mono); letter-spacing: .16em; color: var(--dim); text-transform: uppercase; margin-bottom: 12px; }
 .signal .label i { display: inline-block; width: 8px; height: 8px; background: var(--red); margin-right: 8px; }
 .bars { display: flex; align-items: center; gap: 3px; height: 120px; }
-.bars span { flex: 1; background: linear-gradient(180deg, var(--cyan), var(--violet)); opacity: .45; border-radius: 1px; }
-.bars span.peak { opacity: 1; box-shadow: 0 0 10px var(--pink); }
+.bars span { flex: 1; background: var(--bar); border-radius: 1px; }
+.bars span.peak { background: var(--red); }
 .chat { display: block; width: 100%; height: 34px; margin-top: 8px; }
 .legend { display: flex; gap: 18px; font: 11px var(--mono); color: var(--dim); letter-spacing: .1em; text-transform: uppercase; margin-top: 8px; flex-wrap: wrap; }
 .legend b { display: inline-block; width: 9px; height: 9px; margin-right: 6px; vertical-align: -1px; }
@@ -51,7 +52,7 @@ h1 .hot { color: var(--red); }
 /* sections */
 section { padding: 56px 0; border-top: 1px solid var(--edge); }
 h2 { font: 700 clamp(26px, 4vw, 38px)/1.1 var(--head); text-transform: uppercase; margin: 0 0 28px; }
-h2 small { display: block; font: 12px var(--mono); color: var(--amber); letter-spacing: .16em; margin-bottom: 10px; }
+h2 small { display: block; font: 12px var(--mono); color: var(--red); letter-spacing: .16em; margin-bottom: 10px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
 .card { background: var(--panel); border: 1px solid var(--edge); border-radius: 4px; padding: 22px; }
 .card .num { font: 12px var(--mono); color: var(--red); letter-spacing: .14em; }
@@ -59,7 +60,7 @@ h2 small { display: block; font: 12px var(--mono); color: var(--amber); letter-s
 .card p { margin: 0; color: var(--dim); font-size: 15.5px; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--edge); border: 1px solid var(--edge); }
 .facts div { background: var(--panel); padding: 18px; }
-.facts strong { display: block; font: 700 28px/1.1 var(--head); color: var(--amber); }
+.facts strong { display: block; font: 700 28px/1.1 var(--head); color: var(--text); }
 .facts span { font: 11px var(--mono); color: var(--dim); letter-spacing: .12em; text-transform: uppercase; }
 
 /* legal pages */
@@ -69,11 +70,11 @@ h2 small { display: block; font: 12px var(--mono); color: var(--amber); letter-s
 .doc h3 { font: 700 18px/1.3 var(--body); margin: 24px 0 6px; }
 .doc p, .doc li { color: #d4d3ce; }
 .doc .updated { font: 12px var(--mono); color: var(--faint); letter-spacing: .08em; }
-.doc .box { background: var(--panel); border: 1px solid var(--edge); border-left: 3px solid var(--cyan); padding: 16px 20px; border-radius: 4px; margin: 20px 0; }
+.doc .box { background: var(--panel); border: 1px solid var(--edge); border-left: 3px solid var(--red); padding: 16px 20px; border-radius: 4px; margin: 20px 0; }
 .doc table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; display: block; overflow-x: auto; }
 .doc th, .doc td { text-align: left; padding: 9px 12px; border: 1px solid var(--edge); vertical-align: top; }
 .doc th { background: var(--panel-2); font-weight: 600; }
-.doc code { font: 13.5px var(--mono); color: var(--amber); word-break: break-all; }
+.doc code { font: 13.5px var(--mono); color: var(--text); word-break: break-all; }
 
 footer { border-top: 1px solid var(--edge); padding: 28px 0 40px; font: 12px var(--mono); color: var(--faint); letter-spacing: .06em; }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }

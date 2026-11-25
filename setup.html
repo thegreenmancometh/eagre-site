@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup guide - Eagre</title>
+<meta name="description" content="How to install Eagre, what happens on the first start, how to make your first clip and how to connect YouTube for posting.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 18'%3E%3Cpath d='M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7' fill='none' stroke='%23ff2e3f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><svg viewBox="0 0 34 18" aria-hidden="true"><path d="M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7" fill="none" stroke="#ff2e3f" stroke-width="3" stroke-linecap="round"/></svg><span>Eag<b>re</b></span></a>
+  <nav class="links"><a href="./">Home</a><a href="help.html">Help</a><a href="requirements.html" class="hide-sm">PC requirements</a></nav>
+</div></header>
+
+<main class="wrap narrow doc">
+<p class="kicker">Help // Setup guide</p>
+<h1>Setting up Eagre</h1>
+<p class="updated">Last updated: 25 November 2026</p>
+
+<div class="box">Short version: run the installer, open Eagre, let the first start download its parts (20 to 60
+minutes, once), then follow the tour to make a clip from the sample stream.</div>
+
+<ol class="toc">
+  <li><a href="#install">Install Eagre</a></li>
+  <li><a href="#first-start">The first start</a></li>
+  <li><a href="#first-clip">Make your first clip</a></li>
+  <li><a href="#youtube">Connect YouTube for posting</a></li>
+  <li><a href="#tiktok-instagram">TikTok and Instagram</a></li>
+  <li><a href="#licence">Unlock a paid plan</a></li>
+  <li><a href="#updates">Updates</a></li>
+</ol>
+
+<h2 id="install">1. Install Eagre</h2>
+<p>Before you start, check that your PC can run Eagre: see <a href="requirements.html">PC requirements</a>. You need
+Windows 10 or 11 and about 25 GB of free space.</p>
+<ol>
+  <li>Download <code>Eagre-Setup.exe</code> (about 50 MB) and open it.</li>
+  <li>Windows may show <strong>"Windows protected your PC"</strong> or say the publisher is unknown. Click
+    <strong>More info</strong>, then <strong>Run anyway</strong>. (This happens because the installer isn't signed with a
+    paid certificate yet. It doesn't mean anything is wrong.)</li>
+  <li>Follow the installer. It doesn't need an administrator password: Eagre installs just for your Windows user and
+    puts an Eagre icon on your desktop and in the Start menu.</li>
+</ol>
+
+<h2 id="first-start">2. The first start</h2>
+<p>Eagre runs its AI on your own PC instead of on our servers, so the first time you open it, it downloads the parts it
+needs. A progress page opens in your browser and shows each part:</p>
+<table>
+  <tr><th>Part</th><th>What it does</th><th>Size</th></tr>
+  <tr><td>App toolbox</td><td>The engine that makes the clips, set up for your graphics card</td><td>about 3.5 GB</td></tr>
+  <tr><td>Speech-to-text toolbox</td><td>Listens to the stream to find moments and write captions</td><td>about 3 GB</td></tr>
+  <tr><td>FFmpeg</td><td>Cuts and saves video (skipped if your PC already has it)</td><td>about 0.1 GB</td></tr>
+  <tr><td>Speech-to-text models</td><td>The models that turn speech into words</td><td>about 0.9 GB</td></tr>
+  <tr><td>Voice separator</td><td>Takes music and game sound out before listening</td><td>about 0.3 GB</td></tr>
+  <tr><td>Writing AI (optional)</td><td>Picks moments and writes hooks and titles; you can skip it</td><td>about 6.6 GB</td></tr>
+</table>
+<p>In total that is up to about 15 GB and usually takes <strong>20 to 60 minutes</strong>, depending on your internet.</p>
+<ul>
+  <li>You can do something else while it runs.</li>
+  <li>If you close Eagre or lose your connection, nothing is lost: the next time you open Eagre it carries on where it
+    stopped.</li>
+  <li>If a part fails, the page shows why, with a <strong>Try again</strong> button. Most failures are a dropped
+    internet connection. See <a href="help.html#problems">Common problems</a> if it keeps failing.</li>
+</ul>
+<p>After this, the Eagre icon opens the app in a few seconds. A small black window opens too (minimised): that window is
+Eagre itself, so leave it open while you use the app. Closing it closes Eagre.</p>
+<p>The first time the app opens, it also runs a one-minute speed check of your PC. You can see the result, and run it
+again, in <strong>Settings &gt; This PC</strong>.</p>
+
+<h2 id="first-clip">3. Make your first clip</h2>
+<p>A short tour starts the first time you open the app. Its last step opens a sample stream that is already scanned, so
+you can make a clip in a couple of minutes. To clip your own stream:</p>
+<ol>
+  <li><strong>Paste a stream.</strong> Paste a Twitch, YouTube or Kick link, or drop a video file from your PC.</li>
+  <li><strong>Pick a recipe.</strong> A recipe sets the caption style, layout and clip length in one click. You can change
+    everything later.</li>
+  <li><strong>Find the best moments.</strong> Eagre listens to the whole stream and reads the chat, then lists the best
+    moments with a score and the reason. A one-hour stream takes about 5 minutes on a fast PC and longer on a slower
+    one (see <a href="requirements.html">PC requirements</a>).</li>
+  <li><strong>Open a moment in the editor</strong> to trim it, fix words, change the captions or the framing. Or tick
+    several moments and make them all at once.</li>
+  <li><strong>Make the clip.</strong> Finished clips appear under <strong>Clips</strong>, ready to download or post. They
+    are also saved in a folder on your PC (Settings shows which one).</li>
+</ol>
+<p>Want new streams scanned without doing anything? Add the streamer under <strong>Channels</strong>. While Eagre is
+open, it scans their new streams so the moments are waiting for you.</p>
+
+<h2 id="youtube">4. Connect YouTube for posting</h2>
+<p>Posting is optional: you can always download a clip and upload it yourself. To post straight from Eagre, YouTube
+needs a one-time setup with a free Google account. It takes about 10 minutes, and you only do it once per PC.</p>
+<ol>
+  <li>Go to <a href="https://console.cloud.google.com/" rel="noopener">console.cloud.google.com</a> and sign in with
+    the Google account that owns your channel.</li>
+  <li>Create a new project (any name, for example "Eagre").</li>
+  <li>In <strong>APIs &amp; Services &gt; Library</strong>, search for <strong>YouTube Data API v3</strong> and click
+    <strong>Enable</strong>.</li>
+  <li>In <strong>APIs &amp; Services &gt; OAuth consent screen</strong>, set it up as <strong>External</strong>, fill in an
+    app name and your email, and add your own Google account as a <strong>test user</strong>.</li>
+  <li>In <strong>APIs &amp; Services &gt; Credentials</strong>, click <strong>Create credentials &gt; OAuth client
+    ID</strong>, choose <strong>Desktop app</strong>, then download the JSON file.</li>
+  <li>In Eagre, open a finished clip and click <strong>Post</strong>. Open the JSON file in Notepad, copy everything
+    in it, paste it into the box and click <strong>Save</strong>.</li>
+  <li>Click <strong>Link a YouTube channel</strong> and sign in with Google. Pick the channel you post clips to.</li>
+</ol>
+<p>Your sign-in is stored only on your PC. You can see and disconnect linked channels in <strong>Settings &gt; Connected
+accounts</strong>.</p>
+
+<h2 id="tiktok-instagram">5. TikTok and Instagram</h2>
+<p>Posting to TikTok and Instagram is being finished. Until then, download the clip from <strong>Clips</strong> and
+upload it in the TikTok or Instagram app. This guide will show the steps once direct posting is ready.</p>
+
+<h2 id="licence">6. Unlock a paid plan</h2>
+<p>Eagre works on the free plan with limits. Your plan and what is left this month are shown in
+<strong>Settings &gt; Your plan</strong>. After you buy a plan you get a licence key by email: paste it into
+<strong>Settings &gt; Licence key</strong> and click <strong>Unlock</strong>. One key works on 2 PCs (for example a
+desktop and a laptop).</p>
+
+<h2 id="updates">7. Updates</h2>
+<p>Open <strong>Settings &gt; Updates</strong> and click <strong>Check for updates</strong>. It shows what's new; click
+<strong>Download update</strong>, then <strong>Install and restart</strong>. Your settings, licence key, projects and clips
+are kept.</p>
+
+<p style="margin-top:40px">Stuck? See <a href="help.html">Help and FAQ</a>, or email
+<a href="mailto:hello@eagre.app">hello@eagre.app</a>.</p>
+</main>
+
+<footer><div class="wrap">
+  <div><a href="help.html">Help</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="mailto:hello@eagre.app">Contact</a></div>
+  <div>&copy; 2026 Eagre</div>
+</div></footer>
+</body>
+</html>

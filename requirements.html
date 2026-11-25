@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PC requirements - Eagre</title>
+<meta name="description" content="What kind of Windows PC Eagre needs, and how fast it runs with and without an NVIDIA graphics card.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 18'%3E%3Cpath d='M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7' fill='none' stroke='%23ff2e3f' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="./"><svg viewBox="0 0 34 18" aria-hidden="true"><path d="M1 9c4 0 4-7 8-7s4 14 8 14 4-14 8-14 4 7 8 7" fill="none" stroke="#ff2e3f" stroke-width="3" stroke-linecap="round"/></svg><span>Eag<b>re</b></span></a>
+  <nav class="links"><a href="./">Home</a><a href="help.html">Help</a><a href="setup.html" class="hide-sm">Setup guide</a></nav>
+</div></header>
+
+<main class="wrap narrow doc">
+<p class="kicker">Help // PC requirements</p>
+<h1>PC requirements</h1>
+<p class="updated">Last updated: 25 November 2026</p>
+
+<div class="box">Eagre does all its work on your own PC, so your PC decides how fast it is. It runs on any recent
+Windows PC, and an <strong>NVIDIA graphics card</strong> makes it many times faster.</div>
+
+<h2>What you need</h2>
+<table>
+  <tr><th></th><th>Needed</th><th>Recommended</th></tr>
+  <tr><td>System</td><td>Windows 10 or 11, 64-bit</td><td>Windows 11</td></tr>
+  <tr><td>Graphics card</td><td>Not required (the processor can do the work, slowly)</td><td>NVIDIA GeForce GTX 10 series or newer; RTX 20 series or newer is fastest</td></tr>
+  <tr><td>Memory (RAM)</td><td>8 GB</td><td>16 GB or more</td></tr>
+  <tr><td>Free disk space</td><td>About 25 GB for Eagre and its downloads</td><td>50 GB or more, so long streams and finished clips have room</td></tr>
+  <tr><td>Internet</td><td>For the first-start download (up to about 15 GB) and for pasting stream links</td><td>A fast connection makes the first start quicker</td></tr>
+</table>
+<p>Mac and Linux are not supported.</p>
+
+<h2>How fast will it be?</h2>
+<p>The slow part is "finding the moments": Eagre listens to the whole stream and reads the chat. Making a clip after
+that takes a minute or less on most PCs. Times below are for finding the moments in a <strong>one-hour
+stream</strong>, measured on our own test PCs:</p>
+<table>
+  <tr><th>Your PC</th><th>One-hour stream</th><th>What Eagre says</th></tr>
+  <tr><td>NVIDIA RTX graphics card (for example an RTX 3060 Ti)</td><td>about 5 minutes</td><td>Fast</td></tr>
+  <tr><td>Older NVIDIA card (GTX 10 series)</td><td>a few minutes longer than RTX</td><td>Fast or Okay</td></tr>
+  <tr><td>No NVIDIA card, a recent processor (for example an Intel Core i5-14400F)</td><td>about 30 to 35 minutes</td><td>Okay</td></tr>
+  <tr><td>Older or laptop processors without an NVIDIA card</td><td>can be over 45 minutes</td><td>Slow</td></tr>
+</table>
+<p>On a slow PC Eagre still works: start a long stream before bed and the moments are ready in the morning, or clip
+shorter recordings.</p>
+
+<h2>Check your own PC</h2>
+<p>Eagre measures your PC instead of guessing. The first time you open it, it runs a one-minute speed check. You can run
+it again any time in <strong>Settings &gt; This PC &gt; Check speed</strong>. It shows your processor, graphics card,
+memory and free space, how fast each part runs, and gives one of three verdicts:</p>
+<ul>
+  <li><strong>Fast:</strong> a one-hour stream is scanned in 15 minutes or less.</li>
+  <li><strong>Okay:</strong> up to 45 minutes. Start a long stream and come back later.</li>
+  <li><strong>Slow:</strong> more than 45 minutes. Scan overnight, or clip shorter recordings.</li>
+</ul>
+
+<h2>Graphics cards</h2>
+<ul>
+  <li><strong>NVIDIA:</strong> the best choice. Eagre uses the card for speech-to-text, the AI and video.</li>
+  <li><strong>AMD and Intel graphics:</strong> Eagre uses them to save video, but speech-to-text and the AI run on the
+    processor, so finding moments is slower. These cards are less tested; please
+    <a href="mailto:hello@eagre.app">tell us</a> if something doesn't work.</li>
+  <li><strong>No graphics card:</strong> everything runs on the processor. It works, just slower.</li>
+</ul>
+
+<p style="margin-top:40px">Ready to start? Read the <a href="setup.html">setup guide</a>. Questions:
+<a href="help.html">Help and FAQ</a>.</p>
+</main>
+
+<footer><div class="wrap">
+  <div><a href="help.html">Help</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a><a href="mailto:hello@eagre.app">Contact</a></div>
+  <div>&copy; 2026 Eagre</div>
+</div></footer>
+</body>
+</html>
